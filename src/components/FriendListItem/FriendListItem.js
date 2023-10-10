@@ -8,11 +8,7 @@ import {
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <FriendItem>
-      <FriendStatus 
-      status={isOnline}
-      // style={{ backgroundColor: isOnline ? 'green' : 'red' }}
-      >
-        </FriendStatus>
+      <FriendStatus status={isOnline}></FriendStatus>
       <FriendAvatar src={avatar} alt="User avatar" width="100" />
       <p>{name}</p>
     </FriendItem>

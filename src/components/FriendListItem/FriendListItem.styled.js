@@ -13,13 +13,18 @@ export const FriendItem = styled.li`
 `;
 
 export const FriendAvatar = styled.img`
-outline: .1px solid rgb(196, 196, 196);
-border-radius: 5px;
-`
+  outline: 0.1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+`;
 
 export const FriendStatus = styled.span`
-width: 20px;
-height: 20px;
-border-radius: 50%;
-background-color: ${props}
-`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+
+  background-color: ${props =>
+    (props.status ? 'green' : 'red')
+    };
+`;
+

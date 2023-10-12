@@ -1,5 +1,12 @@
 import React from 'react';
-import { Container, TransactionTitle, TitleInfo, TransactionItem, TransactionList, Type } from './TransactionHistory.styled';
+import {
+  Container,
+  TransactionTitle,
+  TitleInfo,
+  TransactionItem,
+  TransactionList,
+  Type,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -16,8 +23,8 @@ export const TransactionHistory = ({ items }) => {
         {items.map(item => (
           <TransactionList key={item.id}>
             <Type>{item.type}</Type>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+            <Type>{item.amount}</Type>
+            <Type>{item.currency}</Type>
           </TransactionList>
         ))}
       </TransactionItem>

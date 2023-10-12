@@ -1,11 +1,19 @@
 import React from 'react';
-import { Avatar, Container, Description, Quantity, Stats, StatsIteam, Title } from './Profile.styled';
+import {
+  Avatar,
+  Container,
+  Description,
+  Quantity,
+  Stats,
+  StatsIteam,
+  Title,
+} from './Profile.styled';
 
 export const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
     <Container>
       <Description>
-        <Avatar src={avatar} alt="User avatar"  />
+        <Avatar src={avatar} alt="User avatar" />
         <Title>{username}</Title>
         <p>@{tag}</p>
         <p>{location}</p>

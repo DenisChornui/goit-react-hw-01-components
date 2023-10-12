@@ -9,12 +9,23 @@ export const Container = styled.table`
 `;
 
 export const TitleInfo = styled.thead`
-  height: 50px;
-  background-color: $rgb(131, 144, 218);
+  height: 60px;
+  background-color: rgb(131, 144, 218);
   color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
 `;
 
-export const TransactionTitle = styled.tr``;
+export const TransactionTitle = styled.th`
+  background-color: rgb(85 222 214 / 73%);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  font-size: 20px;
+`;
 
 export const TransactionItem = styled.tbody`
   text-align: center;
@@ -22,17 +33,16 @@ export const TransactionItem = styled.tbody`
 `;
 
 export const TransactionList = styled.tr`
-  height: 50px;
-  row:nth-child(even) {
-    background-color: rgb(226, 226, 226);
-  }
-  row:nth-child(odd) {
-    background-color: rgb(244, 244, 244);
+  height: 60px;
+  &:nth-child(even) {
+    background-color: rgba(171, 166, 166, 0.5);
   }
 `;
 
 export const Type = styled.td`
-type::first-letter {
-    text-transform: uppercase;
-}
-`
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(85 222 214 / 73%);
+  border-radius: 3px;
+  font-size: 16px;
+`;

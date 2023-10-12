@@ -18,17 +18,17 @@ export const Title = styled.h2`
 `;
 
 export const List = styled.ul`
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-color: white;
-font-size: 16px;
-`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+`;
 export const Item = styled.li`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 20%;
-height: 70px;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 70px;
+`;

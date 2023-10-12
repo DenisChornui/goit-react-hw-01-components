@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 export const Description = styled.div`
   text-align: center;
+  margin-bottom: 50px;
 `;
 
 export const Title = styled.p`
@@ -39,10 +40,9 @@ export const StatsIteam = styled.li`
   border: 1px solid rgb(196, 196, 196);
   padding: 25px;
   width: 33.333%;
-  
-`
+`;
 export const Quantity = styled.span`
-color: black;
-font-weight: 500;
-font-size: 25px;
-`
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+`;
